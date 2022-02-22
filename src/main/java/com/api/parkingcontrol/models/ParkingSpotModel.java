@@ -52,7 +52,7 @@ public class ParkingSpotModel implements Serializable {
 	private String responsibleName;
 
 	@Column(nullable = false, length = 30)
-	private String apartament;
+	private String apartament; 
 
 	@Column(nullable = false, length = 30)
 	private String block;
