@@ -18,11 +18,7 @@ public class ParkingSpotService {
 	@Autowired
 	private ParnkingSpotRepository repository;
 
-	@Transactional
-	public Object save(Object parkingSpotModel) {
 
-		return repository.save(parkingSpotModel);
-	}
 
 	public boolean existsByLicensePlateCar(String licensePlateCar) {
 
@@ -53,6 +49,11 @@ public class ParkingSpotService {
 	public void delete(ParkingSpotModel parkingSpotModel) {
 		repository.delete(parkingSpotModel);
 		
+	}
+
+	public Object save(ParkingSpotModel parkingSpotModel) {
+		// TODO Auto-generated method stub
+		return repository.save(parkingSpotModel);
 	}
 
 }
